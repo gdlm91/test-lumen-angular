@@ -14,3 +14,7 @@
 $app->get('/api', function () use ($app) {
     return $app->version();
 });
+
+$app->get('/api/hello', function () {
+    return "Hello World from API!";
+});
